@@ -31,13 +31,23 @@ import {
 label.textContent = "";
 userInput.value = ""; 
 
+// function handleSubmitClick(textContent) {
+//   if (textContent === equalsSign) {
+//     handleEqualsClick(label, userInput);
+//   } else if (textContent === percentageSign) {
+//     handlePercentageClick(userInput, label);
+//   } else {
+//     handleOtherOperatorsClick(textContent, userInput, label);
+//   }
+// }
+
 function handleSubmitClick(textContent) {
   if (textContent === equalsSign) {
-    handleEqualsClick(label, userInput);
+    handleEqualsClick(label, userInput); 
   } else if (textContent === percentageSign) {
-    handlePercentageClick(userInput, label);
+    handlePercentageClick(userInput, label); 
   } else {
-    handleOtherOperatorsClick(textContent, userInput, label);
+    handleOtherOperatorsClick(textContent, userInput, label); 
   }
 }
 
