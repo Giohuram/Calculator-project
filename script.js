@@ -4,15 +4,15 @@ const label = document.querySelector("#input");
 const userInput = form.elements["userInput"];
 
 import {
-  percentageSign, 
+  percentageSign,
   equalsSign,
-  handleEqualsClick, 
-  handlePercentageClick, 
-  handleOtherOperatorsClick, 
-  handleResetClick, 
-  handleButtonClick, 
-  clearResult, 
-} from "./calculator.js"; 
+  handleEqualsClick,
+  handlePercentageClick,
+  handleOtherOperatorsClick,
+  handleResetClick,
+  handleButtonClick,
+  clearResult,
+} from "./calculator.js";
 
 // import {
 //   percentageSign,
@@ -29,7 +29,7 @@ import {
 // userInput.value = "";
 
 label.textContent = "";
-userInput.value = ""; 
+userInput.value = "";
 
 // function handleSubmitClick(textContent) {
 //   if (textContent === equalsSign) {
@@ -43,11 +43,11 @@ userInput.value = "";
 
 function handleSubmitClick(textContent) {
   if (textContent === equalsSign) {
-    handleEqualsClick(label, userInput); 
+    handleEqualsClick(label, userInput);
   } else if (textContent === percentageSign) {
-    handlePercentageClick(userInput, label); 
+    handlePercentageClick(userInput, label);
   } else {
-    handleOtherOperatorsClick(textContent, userInput, label); 
+    handleOtherOperatorsClick(textContent, userInput, label);
   }
 }
 
@@ -73,27 +73,23 @@ buttons.forEach(function(button) {
   button.addEventListener("click", function() {
     switch (this.type) {
       case "submit":
-        handleSubmitClick(this.textContent); 
+        handleSubmitClick(this.textContent);
         break;
       case "reset":
-        handleResetClick(label, form); 
-        break; 
-      case "button": 
-        handleButtonClick(this.textContent, userInput); 
-        break; 
-      default: 
-      break;        
+        handleResetClick(label, form);
+        break;
+      case "button":
+        handleButtonClick(this.textContent, userInput);
+        break;
+      default:
+        break;
     }
-  })
-})
-
-// userInput.addEventListener("input", function() {
-//   this.value = this.value.match(/[0-9.]*/)[0];
-// });
+  });
+});
 
 userInput.addEventListener("input", function() {
   this.value = this.value.match(/[0-9.]*/)[0];
-}); 
+});
 
 // form.addEventListener("submit", function(event) {
 //   event.preventDefault();
@@ -104,13 +100,13 @@ userInput.addEventListener("input", function() {
 // })
 
 form.addEventListener("submit", function(event) {
-  event.preventDefault(); 
-} )
+  event.preventDefault();
+});
 
-// form.addEventListener("reset", function() {
-//   clearResult();
-// });
-
-form.addEventListener("reset", function(){
+form.addEventListener("reset", function() {
   clearResult();
-}); 
+});
+
+
+
+
