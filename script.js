@@ -25,8 +25,11 @@ import {
 //   clearResult,
 // } from "./calculator.js";
 
+// label.textContent = "";
+// userInput.value = "";
+
 label.textContent = "";
-userInput.value = "";
+userInput.value = ""; 
 
 function handleSubmitClick(textContent) {
   if (textContent === equalsSign) {
