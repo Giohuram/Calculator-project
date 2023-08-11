@@ -99,9 +99,13 @@ userInput.addEventListener("input", function() {
 //   event.preventDefault();
 // });
 
+// form.addEventListener("submit", function(event) {
+//   event.preventDefault();
+// })
+
 form.addEventListener("submit", function(event) {
-  event.preventDefault();
-})
+  event.preventDefault(); 
+} )
 
 // form.addEventListener("reset", function() {
 //   clearResult();
