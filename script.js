@@ -95,10 +95,18 @@ userInput.addEventListener("input", function() {
   this.value = this.value.match(/[0-9.]*/)[0];
 }); 
 
+// form.addEventListener("submit", function(event) {
+//   event.preventDefault();
+// });
+
 form.addEventListener("submit", function(event) {
   event.preventDefault();
-});
+})
 
-form.addEventListener("reset", function() {
+// form.addEventListener("reset", function() {
+//   clearResult();
+// });
+
+form.addEventListener("reset", function(){
   clearResult();
-});
+}); 
