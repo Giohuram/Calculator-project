@@ -4,15 +4,26 @@ const label = document.querySelector("#input");
 const userInput = form.elements["userInput"];
 
 import {
-  percentageSign,
+  percentageSign, 
   equalsSign,
-  handleEqualsClick,
-  handlePercentageClick,
-  handleOtherOperatorsClick,
-  handleResetClick,
-  handleButtonClick,
-  clearResult,
-} from "./calculator.js";
+  handleEqualsClick, 
+  handlePercentageClick, 
+  handleOtherOperatorsClick, 
+  handleResetClick, 
+  handleButtonClick, 
+  clearResult, 
+} from "./calculator.js"; 
+
+// import {
+//   percentageSign,
+//   equalsSign,
+//   handleEqualsClick,
+//   handlePercentageClick,
+//   handleOtherOperatorsClick,
+//   handleResetClick,
+//   handleButtonClick,
+//   clearResult,
+// } from "./calculator.js";
 
 label.textContent = "";
 userInput.value = "";
