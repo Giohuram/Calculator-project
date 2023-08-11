@@ -87,9 +87,13 @@ buttons.forEach(function(button) {
   })
 })
 
+// userInput.addEventListener("input", function() {
+//   this.value = this.value.match(/[0-9.]*/)[0];
+// });
+
 userInput.addEventListener("input", function() {
   this.value = this.value.match(/[0-9.]*/)[0];
-});
+}); 
 
 form.addEventListener("submit", function(event) {
   event.preventDefault();
