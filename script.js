@@ -51,23 +51,41 @@ function handleSubmitClick(textContent) {
   }
 }
 
+// buttons.forEach(function(button) {
+//   button.addEventListener("click", function() {
+//     switch (this.type) {
+//       case "submit":
+//         handleSubmitClick(this.textContent);
+//         break;
+//       case "reset":
+//         handleResetClick(label, form);
+//         break;
+//       case "button":
+//         handleButtonClick(this.textContent, userInput);
+//         break;
+//       default:
+//         break;
+//     }
+//   });
+// });
+
 buttons.forEach(function(button) {
   button.addEventListener("click", function() {
     switch (this.type) {
       case "submit":
-        handleSubmitClick(this.textContent);
+        handleSubmitClick(this.textContent); 
         break;
       case "reset":
-        handleResetClick(label, form);
-        break;
-      case "button":
-        handleButtonClick(this.textContent, userInput);
-        break;
-      default:
-        break;
+        handleResetClick(label, form); 
+        break; 
+      case "button": 
+        handleButtonClick(this.textContent, userInput); 
+        break; 
+      default: 
+      break;        
     }
-  });
-});
+  })
+})
 
 userInput.addEventListener("input", function() {
   this.value = this.value.match(/[0-9.]*/)[0];
